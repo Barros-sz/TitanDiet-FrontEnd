@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000/gerar-dieta";
+const API_URL = "https://titan-diet-back-end.vercel.app/gerar-dieta";
 
 const form = document.getElementById('diet-form');
 const spinner = document.getElementById('loading-spinner');
