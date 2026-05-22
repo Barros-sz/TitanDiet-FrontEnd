@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutricionista Barros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">NUTRI<span>BARROS</span></div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div id="formSection">
+            <h2>Monte sua Dieta</h2>
+            <form id="diet-form">
+                <input type="text" id="objetivo" required placeholder="Qual o seu objetivo? (ex: Hipertrofia, Emagrecimento)">
+                <input type="text" id="dia_livre" placeholder="Dia livre desejado? (ex: Domingo, Nenhum)">
+                <textarea id="detalhes" placeholder="Detalhes extras (alergias, alimentos que odeia...)" rows="4"></textarea>
+                
+                <button type="submit" id="btn-enviar" class="btn-gold">
+                    <span>Solicitar Dieta</span>
+                </button>
+            </form>
+            
+            <div id="loading-spinner" class="hidden">
+                <div class="spinner"></div>
+            </div>
+            
+            <div id="error-message" class="error-box hidden"></div>
+        </div>
+
+        <div id="resultado-container" class="hidden mt-lg">
+            <div class="card mb-lg highlight-card">
+                <h3 class="text-gym-gold mb-md">Mensagem do Barros</h3>
+                <div id="mensagens-barros"></div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-header">
+                    <h3 id="objetivo-identificado"></h3>
+                </div>
+                <div id="dieta-semanal" class="cards">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
